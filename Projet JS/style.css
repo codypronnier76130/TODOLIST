@@ -1,0 +1,99 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:white;
+    min-height: 100vh;
+    
+}
+
+#all {
+    margin:4rem auto;
+	padding:2rem 3rem 3rem;
+	max-width:400px;
+	background:#e3e5fc;
+	color:#FFF;
+	box-shadow:-20px -20px 0px 0px rgba(100,100,100,.1);
+}
+
+h1 {
+    margin-top: 0.1px;
+    text-align: center;
+    background-color: #9d78e0;
+    padding: 0.8rem;
+    border-radius: 10px;
+}
+
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form input, form button{
+    padding: 0.8rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+    text-align: center;
+}
+
+form button{
+    color: #9d78e0;
+    background: white;
+    cursor: pointer;  
+    transition: all 0.3s ease;  
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.delete-btn, .checked-btn {
+
+    background-color: #9d78e0;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+
+.checked {
+    text-decoration: line-through;
+    text-decoration-color:  #9d78e0;
+}
